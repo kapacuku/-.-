@@ -1,0 +1,138 @@
+body {
+    background: rgb(105, 49, 131); 
+    font-family: 'Russo One', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+
+}
+* {
+    box-sizing: border-box;
+}
+/*КОНТЕЙНЕР*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*Intro*/
+.intro {
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 100vh;
+background: url(intro.jpg) center no-repeat;
+background-size: cover;
+}
+.intro_inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro_-title {
+    font-size: 88px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    margin-top: 100px;
+}
+.intro-sutitle {
+    font-family: 'Montserrat Alternates', sans-serif; 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 10px auto 60px;
+    
+}
+.intro_-title::after {
+    content:"";
+    display: block;
+    width: 700px;
+    height: 3px;
+    margin: 40px auto 0;
+    background-color: rgb(255, 255, 255);
+}
+/* Лого */
+.header{
+    padding-top: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+} 
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 5, 222);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Навигация */
+.nav {
+font-size: 18px;
+text-transform: uppercase;
+}
+.nav__link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color .2s linear;
+    margin: 0 20px;
+    display: inline-block;
+    position: relative;
+}
+.nav__link:hover {
+    color: rgb(255, 5, 222);
+}
+.nav__link::after {
+    content: "";
+    display: block;
+    display: none;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 5, 222);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.nav__link:hover::after {
+    display: block;
+}
+/* Кнопка */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: backround .1s
+    linear, color .2s;
+}
+.btn:hover {
+   background-color: #fff;
+   color: rgb(165, 0, 129); 
+}
+.sanya {
+   height: 200px;
+   display: block;
+   margin: 0px auto 0px;
+}
+
+/* Видео */
+.video {
+    border-radius: 100px;
+    border: 3px solid #fff;
+}
